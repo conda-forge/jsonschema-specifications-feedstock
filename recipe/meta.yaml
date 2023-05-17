@@ -1,4 +1,4 @@
-{% set version = "2023.3.6" %}
+{% set version = "2023.5.1" %}
 
 package:
   name: jsonschema-specifications
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/j/jsonschema-specifications/jsonschema_specifications-{{ version }}.tar.gz
-  sha256: 1f84ccccce27abf263904363aa59171e9f889c152965f9e71bc05dfc520502fb
+  sha256: ca4c182adb268045fb70e6c09eb818ff4f9d27e762725b0f257cfdd318dffca9
 
 build:
   number: 0
