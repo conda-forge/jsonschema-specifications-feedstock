@@ -22,7 +22,7 @@ requirements:
   run:
     - importlib_resources >=1.4.0
     - python >=3.8
-    - referencing >=0.25.0
+    - referencing >=0.31.0
 
 test:
   imports:
