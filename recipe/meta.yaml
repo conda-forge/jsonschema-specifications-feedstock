@@ -11,8 +11,9 @@ source:
 build:
   number: 0
   noarch: python
-  script: 
-    - {{ PYTHON }} -m pip install . -vvv --no-deps --no-build-isolation
+  script:
+    - ls {{ SP_DIR }} || dir {{ SP_DIR }}
+    - {{ PYTHON }} -m pip install . -vvv --no-deps --no-build-isolation --ignore-installed
     - ls {{ SP_DIR }} || dir {{ SP_DIR }}
 
 requirements:
