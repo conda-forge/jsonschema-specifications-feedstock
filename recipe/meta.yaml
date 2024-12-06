@@ -6,11 +6,11 @@ package:
 
 source:
   folder: src
-  url: https://pypi.io/packages/source/j/jsonschema-specifications/jsonschema_specifications-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jsonschema-specifications/jsonschema_specifications-{{ version }}.tar.gz
   sha256: 0f38b83639958ce1152d02a7f062902c41c8fd20d558b0c34344292d417ae272
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} {{ RECIPE_DIR }}/builder.py
 
@@ -19,10 +19,10 @@ requirements:
     - hatch-vcs
     - hatchling
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - python-build
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - referencing >=0.31.0
 
 test:
@@ -36,6 +36,7 @@ test:
     - pip
     - pytest
     - coverage
+    - python {{ python_min }}
 
 about:
   summary: The JSON Schema meta-schemas and vocabularies, exposed as a Registry
