@@ -11,6 +11,8 @@ package:
 source:
   url: https://pypi.org/packages/source/j/jsonschema-specifications/jsonschema_specifications-${{ version }}.tar.gz
   sha256: 630159c9f4dbea161a6a2205c3011cc4f18ff381b189fff48bb39b9bf26ae608
+  # src is copied to a temp dir to avoid in-tree build-system issues
+  target_directory: src
 
 build:
   number: 0
@@ -49,7 +51,7 @@ tests:
 about:
   summary: The JSON Schema meta-schemas and vocabularies, exposed as a Registry
   license: MIT
-  license_file: COPYING
+  license_file: src/COPYING
   homepage: https://github.com/python-jsonschema/jsonschema-specifications
   documentation: https://jsonschema-specifications.readthedocs.io
 
