@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: The JSON Schema meta-schemas and vocabularies, exposed as a Registry
 
-Documentation: https://jsonschema-specifications.readthedocs.io
+Documentation: https://jsonschema-specifications.readthedocs.io/
 
 Current build status
 ====================
