@@ -1,4 +1,4 @@
-{% set version = "2024.10.1" %}
+{% set version = "2025.4.1" %}
 
 package:
   name: jsonschema-specifications
@@ -7,10 +7,10 @@ package:
 source:
   folder: src
   url: https://pypi.org/packages/source/j/jsonschema-specifications/jsonschema_specifications-{{ version }}.tar.gz
-  sha256: 0f38b83639958ce1152d02a7f062902c41c8fd20d558b0c34344292d417ae272
+  sha256: 630159c9f4dbea161a6a2205c3011cc4f18ff381b189fff48bb39b9bf26ae608
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} {{ RECIPE_DIR }}/builder.py
 
